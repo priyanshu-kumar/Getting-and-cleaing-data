@@ -1,3 +1,12 @@
+# Transformations and Work Performed
+The following steps were performed to prepare a tidy data set that can be used for later analysis:
+
+Read in training and test data sets. Merge to create one data set.
+Read in and index activity names data set. Apply descriptive activity names to name the activities in the data set.
+Read in features data set. Appropriately label the data set with descriptive variable names from the features data set.
+Extract only the measurements on the mean and standard deviation for each measurement.
+Create an independent tidy data set with the average of each variable for each activity and each subject. Write the tidy data set output to a delimited TXT file.
+
 # Tidy data set description
 
 ### The variables in the tidy data
