@@ -1,18 +1,13 @@
 library(dplyr)
 
-# read train data and test data
+# read train data, test data, subject dates, variable names and labels
 X_train <- read.table("/home/alasta/Downloads/Getting-and-Cleaning-Data-Week-4-Assignment-master/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt")
-Y_train <- read.table("/home/alasta/Downloads/Getting-and-Cleaning-Data-Week-4-Assignment-master/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt")
-Sub_train <- read.table("/home/alasta/Downloads/Getting-and-Cleaning-Data-Week-4-Assignment-master/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt")
-
 X_test <- read.table("/home/alasta/Downloads/Getting-and-Cleaning-Data-Week-4-Assignment-master/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt")
+Y_train <- read.table("/home/alasta/Downloads/Getting-and-Cleaning-Data-Week-4-Assignment-master/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt")
 Y_test <- read.table("/home/alasta/Downloads/Getting-and-Cleaning-Data-Week-4-Assignment-master/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt")
+Sub_train <- read.table("/home/alasta/Downloads/Getting-and-Cleaning-Data-Week-4-Assignment-master/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt")
 Sub_test <- read.table("/home/alasta/Downloads/Getting-and-Cleaning-Data-Week-4-Assignment-master/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt")
-
-# read var NAmes
 variable_names <- read.table("/home/alasta/Downloads/Getting-and-Cleaning-Data-Week-4-Assignment-master/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/features.txt")
-
-# read  labels
 labels <- read.table("/home/alasta/Downloads/Getting-and-Cleaning-Data-Week-4-Assignment-master/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt")
 
 # Problem 1. Merges the training and the test sets to create one data set.
